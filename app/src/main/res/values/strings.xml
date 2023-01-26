@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Assignment2</string>
+    <string name="HowToPlay">"If a unit electric point charge is in motion in an electromagnetic field, the force acting upon it is equal to the electric force which is present at the locality of the charge, and which we ascertain by transformation of the field to a system of co-ordinates at rest relatively to the electrical charge. "</string>
+</resources>
