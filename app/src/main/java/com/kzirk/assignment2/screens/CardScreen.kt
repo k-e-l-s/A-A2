@@ -39,7 +39,6 @@ fun cardScreen(card: Card, navController: NavController){
             )
             Text(text = card.name, fontFamily = fonts, color = fontColor, fontSize = 22.sp)
         }
-
         //image
         Row(modifier = Modifier.size(width = 200.dp, height = 300.dp)){
 
@@ -74,8 +73,7 @@ fun cardScreen(card: Card, navController: NavController){
                     contentDescription = "Dragon card",
                     modifier = Modifier
                         .size(width = 100.dp, height = 50.dp))
-
-            }
+                }
             Spacer(modifier = Modifier.width(40.dp))
             if (types[1] == "Normal"){
                 //normal card
@@ -92,7 +90,6 @@ fun cardScreen(card: Card, navController: NavController){
                     contentDescription = "Trap card",
                     modifier = Modifier
                         .size(width = 100.dp, height = 50.dp))
-
             }
         }
         //description

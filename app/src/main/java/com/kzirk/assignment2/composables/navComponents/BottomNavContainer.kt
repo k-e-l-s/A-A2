@@ -19,7 +19,7 @@ fun bottomNavContainer(navController: NavController, pageScreen: @Composable () 
         modifier = Modifier
             .fillMaxSize()
     ) {
-        // Container for the screen to be displayed
+        // Container for the screen to be displayed, we will pass in whatever screen we want to render to this
         Box {
             pageScreen()
         }

@@ -27,13 +27,14 @@ fun cardComponent(card: Card, navController: NavController, index: Int){
             .padding(vertical = 15.dp, horizontal = 20.dp),
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
+        //showing the picture of the card
         Image(painter = painterResource(id = card.image),
             contentDescription = "Card Image",
             modifier = Modifier.width(150.dp).height(200.dp).clickable {
                navController.navigate(Route.CardScreen.route + "/${ index }")
             },
-
         )
+        //showing the text outside of the cards
         Text(text = card.name, fontFamily = fonts, fontSize = 14.sp, color = fontColor)
     }
 }

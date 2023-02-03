@@ -2,6 +2,11 @@ package com.kzirk.assignment2
 
 import com.kzirk.assignment2.models.Card
 
+/*
+* This is my temporary card repository. If we had to do the backend, we would have gotten this list
+* from an API
+* */
+
 public class CardRepository {
 
     var card1 = Card(

@@ -68,8 +68,7 @@ sealed class BottomNavItem(var label: String, var icon: Int, var icon2: Int, var
 fun Navigation(){
     //creating a navigation controller we can use to actually do the navigation
     val navController = rememberNavController()
-
-
+    //we will start on the login screen when the app boots up
     val startingScreen: String = Route.LoginScreen.route
 
     NavHost(
@@ -79,15 +78,14 @@ fun Navigation(){
         composable(route = Route.PostCardsScreen.route){
             bottomNavContainer(navController = navController) {
                 postCardsScreen(navController)
-
             }
         }
-
         composable(route = Route.AllCardsScreen.route){
             bottomNavContainer(navController = navController) {
                 allCardsScreen(navController)
             }
         }
+        //this composable looks different because it will dynamically load the page for the specific card
         composable(
             route = Route.CardScreen.route + "/{${ RouteArgs.CARD_ID }}",
             arguments = listOf(
@@ -105,14 +103,13 @@ fun Navigation(){
             if (id != null){
                card = cardRepo.cardList[id]
             } else{
+                //if we fail to get the id for any reason, we will display card 5
                 card = cardRepo.cardList[5]
             }
             bottomNavContainer(navController = navController) {
                 cardScreen(card = card, navController = navController)
             }
-
         }
-
         composable(route = Route.HowToPlayScreen.route){
             bottomNavContainer(navController = navController) {
                 howToPlayScreen(navController)

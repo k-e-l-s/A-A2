@@ -45,12 +45,14 @@ fun signUpText(navController: NavController) {
                 .fillMaxSize()
                 .background(color = Color.Transparent)
         ) {
+            //using the sign up background
             signUpBackground()
             Column(
                 modifier = Modifier
                     .padding(40.dp)
 
             ) {
+                //showing the yugioh logo
                 Image(
                     painter = painterResource(id = R.drawable.logo),
                     contentDescription = "logo",
@@ -59,7 +61,7 @@ fun signUpText(navController: NavController) {
                         .height(240.dp)
                         .padding(start = 60.dp, end = 60.dp, top = 100.dp, bottom = 0.dp)
                 )
-                //Text(stringResource(R.string.email), color = Color.LightGray)
+                //text fields for the form
                 TextField(modifier = Modifier
                     .background(Color.Transparent)
                     .padding(vertical = 10.dp, horizontal = 20.dp)
@@ -86,7 +88,6 @@ fun signUpText(navController: NavController) {
                         verifyEmail = it
                     }
                 )
-                //Text("Password", color = Color.LightGray)
                 TextField(modifier = Modifier
                     .background(Color.Transparent)
                     .padding(vertical = 10.dp, horizontal = 20.dp)
@@ -111,6 +112,7 @@ fun signUpText(navController: NavController) {
                         verifyPassword = it
                     }
                 )
+                //sign up button
                 Row(modifier = Modifier
                     .align(CenterHorizontally)
                 ){

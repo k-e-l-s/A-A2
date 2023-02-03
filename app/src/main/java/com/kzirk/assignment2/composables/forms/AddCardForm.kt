@@ -22,7 +22,7 @@ import com.kzirk.assignment2.ui.theme.gold
 
 @Composable
 fun addCardForm(){
-
+    //these will hold the names that the user inputs into the text fields
     var cardName by remember {
         mutableStateOf("")
     }
@@ -32,16 +32,14 @@ fun addCardForm(){
     var cardSerialNumber by remember {
         mutableStateOf("")
     }
-
-
+    //showing the packground
     mainBackground()
-
     Assignment2Theme() {
-
         Column(
             modifier = Modifier
                 .padding(horizontal = 40.dp, vertical = 0.dp)
         ) {
+            //displaying the title
             Row(modifier = Modifier
                 .fillMaxWidth()
                 .align(Alignment.CenterHorizontally)){
@@ -51,9 +49,9 @@ fun addCardForm(){
                         .padding(50.dp)
                         .fillMaxWidth()
                         .height(30.dp)
-
                 )
             }
+            //displaying the image icon
             Row(
                 modifier = Modifier
                     .align(Alignment.CenterHorizontally)
@@ -64,6 +62,7 @@ fun addCardForm(){
                     contentDescription = "add image",
                 modifier = Modifier.fillMaxSize())
             }
+            //showing the form for the page
             Row(modifier = Modifier.padding(top = 20.dp)){
                 TextField(modifier = Modifier
                     .background(Color.Transparent)
@@ -103,6 +102,7 @@ fun addCardForm(){
                     }
                 )
             }
+            //the button
             Row(modifier = Modifier
                 .align(Alignment.CenterHorizontally)
             ){

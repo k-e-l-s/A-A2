@@ -24,11 +24,14 @@ import com.kzirk.assignment2.ui.theme.fonts
 
 @Composable
 fun howToPlayScreen(navController: NavController){
+    //showing the main background
     mainBackground()
     Column(modifier = Modifier
         .padding(40.dp)
+            //letting us scroll to see all the cards
         .verticalScroll(rememberScrollState()),
     ) {
+        //how to play title image
         Row(modifier = Modifier.fillMaxWidth()){
             Image(painter = painterResource(id = R.drawable.howtoplaytitle),
                 contentDescription = "How to play title",
@@ -37,7 +40,7 @@ fun howToPlayScreen(navController: NavController){
                     .height(100.dp)
             )
         }
-
+        //first picture to be displayed
         Row(
             modifier = Modifier
                 .fillMaxWidth()
@@ -53,7 +56,7 @@ fun howToPlayScreen(navController: NavController){
                     .height(200.dp)
             )
         }
-
+        //first bit of text
         Row(modifier = Modifier
             .padding(bottom = 15.dp)
             .align(Alignment.CenterHorizontally)
@@ -70,7 +73,7 @@ fun howToPlayScreen(navController: NavController){
                     .padding(top = 20.dp, bottom = 20.dp)
             )
         }
-
+        //second picture
         Row(modifier = Modifier.align(Alignment.CenterHorizontally)) {
             Image(
                 painter = painterResource(id = R.drawable.h2p2
@@ -82,6 +85,7 @@ fun howToPlayScreen(navController: NavController){
                     .height(300.dp)
             )
         }
+        //adding a spacer here so the bottom of the page doesn't get cut off by the navigation
         Row(){
             Spacer(modifier = Modifier.height(100.dp))
         }

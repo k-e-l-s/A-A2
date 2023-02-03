@@ -35,21 +35,22 @@ fun bottomNav(navController: NavController){
         BottomNavItem.howToPlay,
         BottomNavItem.postCards
     )
-    //this renders an image of the nav bar background
+    //this shows the background for the navbar
     Box(modifier = Modifier.height(60.dp)){
         Image(painter = painterResource(id = R.drawable.bottombackground),
             contentDescription = "bottom nav image",
         modifier = Modifier.fillMaxSize())
     }
-
+    //this is the actual navbar component
     BottomNavigation(
         modifier =  Modifier.height(60.dp),
         contentColor = Color.Black,
+        //we are already rendering the background we want, so we will make this background transparent
         backgroundColor = Color.Transparent
     ){
         //for everything we had in our navbar items
         navItems.forEach { navItem ->
-            // is the current navigation item selected?
+            // is the current navigation item selected
             var selected = currentRoute?.startsWith(navItem.route) ?: false
             //changing the icon if it's selected
             var iconPath : Int = if (selected){
