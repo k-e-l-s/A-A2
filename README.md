@@ -1,2 +1,2 @@
-# newAndroid
+# Android
  Assignment 2
