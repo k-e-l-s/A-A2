@@ -17,7 +17,7 @@ These were the given images
 - App
      - src (contains app files for the app)
        - main (the main files that run the app)
-         - java/com/kzirk/assignment2 (the container that holds the code that I wrote)
+         - java/com/kzirk/assignment2 (the container that holds runnable code)
            - composables (these are custom made UI pieces that can be combined and used on a page)
              - backgrounds (holds all the backgrounds that I used for the app, setting the image as a background, making sure it fills the background, and making sure it's put behind everything on screen)
              - forms (this contains any forms that a user would want to input anything for)
@@ -35,5 +35,16 @@ These were the given images
        - res (contains all 'drawables' or front-end images, fonts, colors, icons)
 
 
+## How to run the program
+1. Have a working pc with internet connection
+2. Install Android Studio
+3. Clone repo
+4. Open the cloned repo and build it in Android Studio
+5. Select Pixel 3a as a virtual testing device (you may have to create a virtual instance of this phone)
+5. Run the program on the Pixel 3a device
 
-
+## How to test the program
+1. Once opened and running in Android Studio, click on the 'Don't have an account? Sign up!' text below the login to view the signup page
+2. Click login (this is a UI assignment, so this links right to the main page)
+3. Scroll through and view the main page
+4. Select the icons at the bottom to navigate to different screens
