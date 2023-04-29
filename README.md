@@ -26,8 +26,8 @@ These were the given images
              - Logo (this renders the logo correctly)
            - models
              - Card.kt (card model that holds all the information I need to use for a card object)
-           - nav
-           - screens
+           - nav (contains all the code needed in order to navigate between each screen)
+           - screens (each screen renders a page of the app which contains the components made above)
            - ui/theme (Used to set a 'theme' for the whole app, this includes colours, shapes, fonts, themes for the whole app)
            - CardRepository.kt (a temporary card repository for the app, in a full app we would get this list from an API)
            - MainActivity.kt (this is where the app starts from)
