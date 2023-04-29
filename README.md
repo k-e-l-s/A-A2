@@ -15,10 +15,24 @@ These were the given images
 ## Structure
 
 - App
- - src
-  - main
-   - java/com/kzirk/assignment2
-    - 
+     - src (contains app files for the app)
+       - main (the main files that run the app)
+         - java/com/kzirk/assignment2 (the container that holds the code that I wrote)
+           - composables (these are custom made UI pieces that can be combined and used on a page)
+             - backgrounds (holds all the backgrounds that I used for the app, setting the image as a background, making sure it fills the background, and making sure it's put behind everything on screen)
+             - forms (this contains any forms that a user would want to input anything for)
+             - navComponents (contains both the navigation bar that gets displayed at the very bottom after login, and also each component inside the navigation bar)
+             - CardComponent (This is a component that renders a card and it's respective information)
+             - Logo (this renders the logo correctly)
+           - models
+             - Card.kt (card model that holds all the information I need to use for a card object)
+           - nav
+           - screens
+           - ui/theme (Used to set a 'theme' for the whole app, this includes colours, shapes, fonts, themes for the whole app)
+           - CardRepository.kt (a temporary card repository for the app, in a full app we would get this list from an API)
+           - MainActivity.kt (this is where the app starts from)
+       - AndroidManifest.xml (contains app permissions)
+       - res (contains all 'drawables' or front-end images, fonts, colors, icons)
 
 
 
