@@ -38,8 +38,8 @@ These were the given images
 ## How to run the program
 1. Have a working pc with internet connection
 2. Install Android Studio
-3. Clone repo
-4. Open the cloned repo and build it in Android Studio
+3. Clone repository
+4. Open the cloned repository and build it in Android Studio
 5. Select Pixel 3a as a virtual testing device (you may have to create a virtual instance of this phone)
 5. Run the program on the Pixel 3a device
 
